@@ -547,6 +547,9 @@
         prev: function () {
             this._showPrevious();
         },
+        currentindex: function() {
+            return(this.current_index);
+        },
         reset: function () {
             // Trigger "beginReset" event
             if (this._triggerEvent("beginReset") === false) {
